@@ -6,7 +6,6 @@ use PHPUnit\Framework\TestCase;
 
 include 'src/FinalResult.php';
 
-
 final class FinalResultTest extends TestCase
 {
     private string $validFilePath = 'tests/support/data_sample.csv';

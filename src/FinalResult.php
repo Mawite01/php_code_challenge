@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 class FinalResult {
 
     private const EXPECTED_ROW = 16;
@@ -11,6 +12,7 @@ class FinalResult {
     {
         $this->filePath = $filePath;
     }
+
     public  function results(): array
     {
         try {
