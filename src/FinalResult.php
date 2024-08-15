@@ -5,9 +5,13 @@ declare(strict_types=1);
 class FinalResult {
 
     private const EXPECTED_ROW = 16;
+
     private const HEADER_ROW = 3;
+
     private const UNIT = 100;
+
     private string $filePath;
+
     public function __construct($filePath)
     {
         $this->filePath = $filePath;

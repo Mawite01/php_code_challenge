@@ -9,8 +9,11 @@ include 'src/FinalResult.php';
 final class FinalResultTest extends TestCase
 {
     private string $validFilePath = 'tests/support/data_sample.csv';
+
     private string $invalidFilePath = 'tests/support/non_existent.csv';
+
     private FinalResult $finalResult;
+
     protected function setUp(): void
     {
         $this->finalResult = new FinalResult($this->validFilePath);
@@ -32,7 +35,6 @@ final class FinalResultTest extends TestCase
         $this->assertTrue($result['error']);
         $this->assertEquals('File does not exist: ' . $this->invalidFilePath, $result['message']);
     }
-
 
     public function testReturnsTheCorrectHash(): void
     {
